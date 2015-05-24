@@ -39,6 +39,8 @@ public class AlternativeView implements observer, Showable{
         mName = name;
         mWindow = window;
         mModel = model;
+        
+        
     }
 
     /**
@@ -53,7 +55,7 @@ public class AlternativeView implements observer, Showable{
      */
     @Override
     public void onDraw() {
-        System.out.println("View (" + mName + "): " + mModel.getData());
+        System.out.println("AlternativeView (" + mName + "): " + mModel.getData());
     }
 
     @Override

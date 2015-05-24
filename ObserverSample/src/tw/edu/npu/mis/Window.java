@@ -63,7 +63,7 @@ public class Window {
      *
      * @param v View to redraw.
      */
-    public void schduleRedraw(View v) {
+    public void schduleRedraw(Showable v) {
         if(!mInvalidViews.contains(v)){
         mInvalidViews.add(v);
         }

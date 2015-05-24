@@ -25,10 +25,23 @@
  */
 package tw.edu.npu.mis;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author STP
  */
 public class subject {
+    ArrayList<observer> al = new ArrayList();
+    void attach(observer o){
+        al.add(o);
+    }
+    void datach(observer o){
+        al.remove(o);
+    }
+    void notifyobserver(){
+    for(observer o : al){
+        o.update();
+    }}
     
 }
