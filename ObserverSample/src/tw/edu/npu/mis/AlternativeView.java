@@ -58,7 +58,7 @@ public class AlternativeView implements observer, Showable{
 
     @Override
     public void update() {
-
+        invalidate();
     }
 
 }
