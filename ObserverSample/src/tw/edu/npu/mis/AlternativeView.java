@@ -56,7 +56,7 @@ public class AlternativeView implements observer, Showable{
      */
     @Override
     public void onDraw() {
-        System.out.println("AlternativeView (" + mName + "): " + mModel.getData());
+        System.out.println("AlternativeView (" + mName + "): " +  new StringBuffer(mModel.getData()).reverse());
     }
 
     @Override
