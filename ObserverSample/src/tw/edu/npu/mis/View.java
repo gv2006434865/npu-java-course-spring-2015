@@ -40,6 +40,7 @@ public class View implements observer,Showable{
         mName = name;
         mWindow = window;
         mModel = model;
+        mModel.attach(this);
         
     }
 

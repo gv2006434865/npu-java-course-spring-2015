@@ -34,12 +34,13 @@ public class AlternativeView implements observer, Showable{
     private final String mName;
     private final Window mWindow;
     private final Model mModel;
+    
 
     public AlternativeView(String name, Window window, Model model) {
         mName = name;
         mWindow = window;
         mModel = model;
-        
+        mModel.attach(this);
         
     }
 
