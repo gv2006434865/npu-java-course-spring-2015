@@ -30,7 +30,7 @@ package tw.edu.npu.mis;
  *
  * @author Samael Wang <freesamael@gmail.com>
  */
-public class View implements observer{
+public class View implements observer,Showable{
 
     private final String mName;
     private final Window mWindow;
@@ -40,6 +40,7 @@ public class View implements observer{
         mName = name;
         mWindow = window;
         mModel = model;
+        
     }
 
     /**
@@ -52,6 +53,7 @@ public class View implements observer{
     /**
      * Show the content of the model on the console.
      */
+    @Override
     public void onDraw() {
         System.out.println("View (" + mName + "): " + mModel.getData());
     }
