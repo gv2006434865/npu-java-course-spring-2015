@@ -30,7 +30,7 @@ package tw.edu.npu.mis;
  *
  * @author Samael Wang <freesamael@gmail.com>
  */
-public class Model extends subject{
+public class Model extends Subject{
 
     private String mData;
 

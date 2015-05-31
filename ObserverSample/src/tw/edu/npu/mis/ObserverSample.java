@@ -34,6 +34,11 @@ import java.util.List;
  * @author Samael Wang <freesamael@gmail.com>
  */
 public class ObserverSample {
+    
+    /**
+     * 
+     * @param args 
+     */
 
     public static void main(String[] args) {
         // Initialize MVC and Window objects.

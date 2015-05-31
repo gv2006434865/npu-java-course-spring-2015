@@ -41,11 +41,11 @@ public class Window {
     /**
      * Start the event loop.
      *
-     * @param c The controller.
+     * @param con The controller.
      * @param views The views to draw on the first loop.
      */
-    public void startEventLoop(Controller c, List<Showable> views) {
-        mController = c;
+    public void startEventLoop(Controller con, List<Showable> views) {
+        mController = con;
         mInvalidViews = new ArrayList<>(views);
 
         // Simulate how an event loop works.
