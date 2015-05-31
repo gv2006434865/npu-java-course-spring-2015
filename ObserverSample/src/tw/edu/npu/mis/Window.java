@@ -30,8 +30,8 @@ import java.util.List;
 
 /**
  * Simulate Window objects in GUI toolkits.
- *
- * @author Samael Wang <freesamael@gmail.com>
+ * 
+ * @author AN
  */
 public class Window {
 

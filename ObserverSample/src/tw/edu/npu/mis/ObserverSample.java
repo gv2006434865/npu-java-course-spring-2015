@@ -30,18 +30,18 @@ import java.util.List;
 
 /**
  * Simulation of a GUI application.
- *
- * @author Samael Wang <freesamael@gmail.com>
+ * 
+ * @author AN
  */
 public class ObserverSample {
     
     /**
+     * Initialize MVC and Window objects.
      * 
      * @param args 
      */
 
     public static void main(String[] args) {
-        // Initialize MVC and Window objects.
         Window window = new Window();
         Model model = new Model();
         Controller controller = new Controller(model);
@@ -51,8 +51,6 @@ public class ObserverSample {
         views.add(new View("View 3", window, model));
         views.add(new AlternativeView("AlternativeView 4", window, model));
         
-
-        // Start the event loop.
         window.startEventLoop(controller, views);
     }
 }

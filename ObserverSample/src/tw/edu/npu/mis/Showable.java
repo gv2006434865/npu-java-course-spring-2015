@@ -26,7 +26,7 @@
 package tw.edu.npu.mis;
 
 /**
- *
+ *Show the content of the model on the console.
  * @author STP
  */
 public interface Showable {

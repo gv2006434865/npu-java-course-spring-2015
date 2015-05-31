@@ -27,14 +27,23 @@ package tw.edu.npu.mis;
 
 /**
  * {@link View} generates outputs to the user.
- *
- * @author Samael Wang <freesamael@gmail.com>
+ * 
+ * @author AN
  */
-public class View implements observer,Showable{
+public class View implements Observer,Showable{
 
     private final String mName;
     private final Window mWindow;
     private final Model mModel;
+   
+    
+    /**
+     * set a view object
+     * 
+     * @param name is view's name
+     * @param window 
+     * @param model 
+     */
 
     public View(String name, Window window, Model model) {
         mName = name;
@@ -51,16 +60,13 @@ public class View implements observer,Showable{
         mWindow.schduleRedraw(this);
     }
 
-    /**
-     * Show the content of the model on the console.
-     */
     @Override
     public void onDraw() {
         System.out.println("View (" + mName + "): " + mModel.getData());
     }
 
     @Override
-    public void update() {
+    public void upDate() {
             invalidate();
     }
 

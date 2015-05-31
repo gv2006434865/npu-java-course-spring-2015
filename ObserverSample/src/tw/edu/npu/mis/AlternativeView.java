@@ -29,13 +29,18 @@ package tw.edu.npu.mis;
  *
  * @author STP
  */
-public class AlternativeView implements observer, Showable{
+public class AlternativeView implements Observer, Showable{
 
     private final String mName;
     private final Window mWindow;
     private final Model mModel;
     
-
+/**
+ * 
+ * @param name
+ * @param window
+ * @param model 
+ */
     public AlternativeView(String name, Window window, Model model) {
         mName = name;
         mWindow = window;
@@ -51,16 +56,14 @@ public class AlternativeView implements observer, Showable{
         mWindow.schduleRedraw(this);
     }
 
-    /**
-     * Show the content of the model on the console.
-     */
+
     @Override
     public void onDraw() {
         System.out.println("AlternativeView (" + mName + "): " +  new StringBuffer(mModel.getData()).reverse());
     }
 
     @Override
-    public void update() {
+    public void upDate() {
         invalidate();
     }
 

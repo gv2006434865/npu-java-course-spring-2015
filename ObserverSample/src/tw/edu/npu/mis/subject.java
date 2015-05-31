@@ -28,20 +28,35 @@ package tw.edu.npu.mis;
 import java.util.ArrayList;
 
 /**
- *
- * @author STP
+ * 
+ * 
+ * @author AN
  */
-public class subject {
-    ArrayList<observer> al = new ArrayList();
-    void attach(observer o){
+public class Subject {
+    ArrayList<Observer> al = new ArrayList();
+    
+    /**
+     * add new contents into arraylist
+     * 
+     * @param o view'contents 
+     */
+    void attach(Observer o){
         al.add(o);
     }
-    void datach(observer o){
+    /**
+     * delete contents from arraylist
+     * 
+     * @param o view'contents
+     */
+    void datach(Observer o){
         al.remove(o);
     }
+    /**
+     * Update model.
+     */
     void notifyobserver(){
-    for(observer o : al){
-        o.update();
+    for(Observer o : al){
+        o.upDate();
     }}
     
 }

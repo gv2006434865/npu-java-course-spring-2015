@@ -27,8 +27,8 @@ package tw.edu.npu.mis;
 
 /**
  * The domain model.
- *
- * @author Samael Wang <freesamael@gmail.com>
+ * 
+ * @author AN
  */
 public class Model extends Subject{
 
@@ -50,7 +50,6 @@ public class Model extends Subject{
      */
     public void setData(String data) {
         mData = data;
-        
         notifyobserver();
     }
 
