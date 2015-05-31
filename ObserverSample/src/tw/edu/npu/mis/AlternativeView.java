@@ -26,7 +26,8 @@
 package tw.edu.npu.mis;
 
 /**
- *
+ * {@link AlternativeView} generates outputs to the user.
+ * 
  * @author STP
  */
 public class AlternativeView implements Observer, Showable{
@@ -35,12 +36,13 @@ public class AlternativeView implements Observer, Showable{
     private final Window mWindow;
     private final Model mModel;
     
-/**
- * 
- * @param name
- * @param window
- * @param model 
- */
+     /**
+     * set a view object
+     * 
+     * @param name is view's name.
+     * @param window detection view change.
+     * @param model use to set or get data.
+     */
     public AlternativeView(String name, Window window, Model model) {
         mName = name;
         mWindow = window;

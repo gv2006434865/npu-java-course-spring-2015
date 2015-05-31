@@ -26,9 +26,10 @@
 package tw.edu.npu.mis;
 
 /**
- *
- * @author STP
+ * Add a view to a queue for redraw on screen later.
+ * 
+ * @author AN
  */
-public interface observer {
-    void update();
+public interface Observer {
+    void upDate();
 }

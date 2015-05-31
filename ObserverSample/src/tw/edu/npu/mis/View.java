@@ -40,9 +40,9 @@ public class View implements Observer,Showable{
     /**
      * set a view object
      * 
-     * @param name is view's name
-     * @param window 
-     * @param model 
+     * @param name is view's name.
+     * @param window detection view change.
+     * @param model use to set or get data.
      */
 
     public View(String name, Window window, Model model) {
